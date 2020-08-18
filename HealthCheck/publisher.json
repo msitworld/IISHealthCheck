@@ -1,0 +1,41 @@
+{
+  "docker": {
+    "name": "healthcheck",
+    "version": "1.1",
+    "from": "mcr.microsoft.com/dotnet/core/aspnet:3.1",
+    "runDLL": "HealthCheck.dll"
+  },
+  "swarmHosts": [
+    {
+      "envirenment": "prod",
+      "hostname": "192.168.40.218",
+      "username": "root",
+      "password": "@rb102040"
+    },
+    {
+      "envirenment": "prod",
+      "hostname": "192.168.40.220",
+      "username": "root",
+      "password": "@rb102040"
+    },
+    {
+      "envirenment": "prod",
+      "hostname": "192.168.40.224",
+      "username": "root",
+      "password": "@rb102040"
+    },
+    {
+      "envirenment": "test",
+      "hostname": "192.168.13.201",
+      "username": "root",
+      "password": "@rb102040"
+    },
+    {
+      "envirenment": "test",
+      "hostname": "192.168.13.202",
+      "username": "root",
+      "password": "@rb102040"
+    }
+  ],
+  "currentFolder": "."
+}

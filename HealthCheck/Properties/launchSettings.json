@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "HealthCheck": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development",
+        "config:metricport": "7777",
+        "CheckingTimeInterval": "10"
+      },
+      "remoteDebugEnabled": false
+    }
+  }
+}
